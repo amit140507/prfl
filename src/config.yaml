@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Amit Singh
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
