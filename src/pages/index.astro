@@ -4,11 +4,11 @@ import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+// import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
+// import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 import photo from '~/assets/images/20240927_211839.jpg';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -26,6 +26,7 @@ const metadata = {
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'Work Experience', href: '#work_experience' },
+        { text: 'Skills', href: '#skills' },
         { text: 'Contact', href: '#contact' },
       ]}
       actions={[
@@ -61,7 +62,7 @@ With hands-on experience in Python, Django REST Framework, and modern web techno
     image={{
       // src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
       src: photo,
-      alt: 'Colorful Image',
+      alt: 'Amit Singh Portrait Image',
       loading: 'eager',
     }}
   >
@@ -86,7 +87,7 @@ With hands-on experience in Python, Django REST Framework, and modern web techno
   <!-- Steps Widget ****************** -->
 
   <Steps
-    id="resume"
+    id="work_experience"
     title="Work experience"
     items={[
       {
@@ -126,6 +127,7 @@ themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client s
   <!-- Features3 Widget ************** -->
 
   <Features3
+    id="skills"
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
     columns={3}
@@ -185,6 +187,7 @@ themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client s
     ]}
   /> -->
   <Features2
+  id="contact"
   title="Get in Touch"
   items={[
     {
@@ -224,9 +227,14 @@ themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client s
     footNote=
     `© ${new Date().getFullYear()} Amit Singh. All rights reserved.`
     socialLinks={[
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/amit140507' },
-    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/919988805966' },
+    // { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
+    // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/amit140507' },
+    // { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/919988805966' },
+    { text: 'Home', href: '#' },
+    { text: 'About', href: '#about' },
+    { text: 'Work Experience', href: '#work_experience' },
+    { text: 'Skills', href: '#skills' },
+    { text: 'Contact', href: '#contact' },
   ]}
   />
 </Fragment>
