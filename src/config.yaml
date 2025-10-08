@@ -1,6 +1,6 @@
 site:
   name: Amit Singh
-  site: 'https://astrowind.vercel.app'
+  site: 'https://14kb.co.in'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: ''
+    template: '%s'
+  description: "\U0001F680 Experienced Django developer with a passion for building innovative, user-centric web apps. From design to deployment, I offer full-stack solutions tailored to your business goals."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: ""
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: ''
+    site: ''
     cardType: summary_large_image
 
 i18n:
