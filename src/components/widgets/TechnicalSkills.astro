@@ -1,0 +1,65 @@
+---
+import SkillTag from './SkillTag.astro';
+---
+
+<section class="bg-gray-50 py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="mb-8 md:mx-auto md:mb-12 text-center max-w-3xl">
+        <h2 class="text-4xl font-bold text-center mb-10">
+            Skills
+          </h2>
+          <p class="mt-4 text-muted text-xl">Discover the proficiencies that allow me to bring imagination to life through design.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Backend & Databases -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">Backend & Databases</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Django REST Framework</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">Frontend</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">HTML</span>
+        </div>
+      </div>
+
+      <!-- DevOps & Tools -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">DevOps & Tools</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+
+      <!-- CMS & PHP Development -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">CMS & PHP Development</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">Elementor</span>
+          <span class="skill-tag">ACF</span>
+          <span class="skill-tag">WooCommerce</span>
+          <span class="skill-tag">PHP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .skill-tag {
+    @apply bg-gray-100 text-black text-sm px-4 py-2 rounded-full;
+  }
+</style>

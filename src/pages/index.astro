@@ -14,6 +14,7 @@ import photo from '~/assets/images/20240927_211839.png';
 import resume from '~/assets/resume/Amit_Singh.pdf';
 import Features2 from '~/components/widgets/Features2.astro';
 import Footer from '~/components/widgets/Footer.astro';
+import TechnicalSkills from '~/components/widgets/TechnicalSkills.astro';
 const metadata = {
   title: 'Amit Singh - Django Developer',
 };
@@ -50,8 +51,8 @@ const metadata = {
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I’m a Django Developer passionate about building efficient, scalable web applications.
-With hands-on experience in Python, Django REST Framework, and modern web technologies, I turn ideas into functional, high-performance digital products. I love writing clean, maintainable code and transforming complex problems into elegant backend solutions.
+      <!-- Experienced Python developer specializing in Django and REST APIs. Passionate about building scalable web applications and optimizing performance. -->
+      Python/Django developer focused on building robust REST APIs, integrating third‑party services, and optimizing data access. I enjoy shipping pragmatic solutions with Django, DRF, and MySQL, and collaborating across teams to deliver features on schedule.
     </Fragment>
   </Hero>
 
@@ -70,11 +71,11 @@ With hands-on experience in Python, Django REST Framework, and modern web techno
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
       <p>
-        Hi, I’m Amit Singh — a full-stack web developer and fitness entrepreneur based in Mohali, Punjab.
+        Hi, I’m Amit Singh — a full-stack web developer based in Mohali, Punjab.
       </p>
       <br />
       <p>
-        I currently work as a Software Developer (Python) at CS Soft Solutions Pvt. Ltd., where I build and maintain scalable web applications using Django, Django REST Framework, and modern front-end technologies..
+        I currently work as a Software Developer (Python) at CS Soft Solutions Pvt. Ltd., where I build and maintain scalable web applications using Django, Django REST Framework, and modern front-end technologies.
       </p>
       <br />
       <p>With hands-on experience in backend development, API design, database optimization, and CMS customization, I love creating solutions that are both powerful and efficient</p>
@@ -94,17 +95,18 @@ With hands-on experience in Python, Django REST Framework, and modern web techno
       {
         title:
           'Django Developer <br /> <span class="font-normal">CS Soft Solutions Pvt Ltd, Mohali, PB</span> <br /> <span class="text-sm font-normal">Jan 2023 - Present</span>',
-        description: `Developed scalable applications using Django and Django REST
-Framework (DRF). <br /> Built REST APIs and integrated third-party services for web/mobile apps. <br /> Optimized SQL queries & ORM operations, improving response times by
-~30%. <br /> Collaborated with cross-functional teams to deliver new features on
-schedule.`,
+        description: `<span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg>Developed scalable applications using Django and Django REST Framework (DRF).</span>
+        <span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg> Built REST APIs and integrated third-party services for web/mobile apps.</span>
+        <span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg>Optimized SQL queries & ORM operations, improving response times by ~30%.</span>
+        <span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg>Collaborated with cross-functional teams to deliver new features on schedule.</span>`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Trainee <br /> <span class="font-normal">CS Soft Solutions Pvt Ltd, Mohali, PB</span> <br /> <span class="text-sm font-normal">Jan 2022 - Dec 2022</span>',
-        description: `Assisted in building PHP-based applications and custom WordPress
-themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client solutions. <br /> Supported debugging, troubleshooting, and performance improvements`,
+        description: `<span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg>Assisted in building PHP-based applications and custom WordPress themes/plugins.</span>
+<span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg>Worked with WooCommerce, Elementor, ACF to deliver client solutions.</span>
+<span class="flex items-center justify-start"><svg class="flex-shrink-0 h-4 text-primary w-6" data-icon="tabler:chevron-right" height="1em" width="1em" viewBox="0 0 24 24"><use href="#ai:tabler:chevron-right"></use></svg>Supported debugging, troubleshooting, and performance improvements.</span>`,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -118,7 +120,7 @@ themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client s
     title="Education"
     items={[
       {
-        title: `Bachelor of Computer Applications <br /> <span class="font-normal">Lovely Professional University, Jalandhar</span> <br /> <span class="text-sm font-normal">2023 - 2026</span>`,
+        title: `Bachelor of Computer Applications <br /> <span class="font-normal">Lovely Professional University, Jalandhar</span> <br /> <span class="text-sm font-normal"></span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -126,13 +128,13 @@ themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client s
   />
 
   <!-- Features3 Widget ************** -->
-
-  <Features3
+<TechnicalSkills/>
+  <!-- <Features3
     id="skills"
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
     columns={2}
-    defaultIcon="tabler:point-filled"
+    defaultIcon="tabler:chevron-right"
     items={[
       {
         title: 'Backend & Databases',
@@ -151,7 +153,7 @@ themes/plugins.<br />Worked with WooCommerce, Elementor, ACF to deliver client s
         description: 'Docker, Git, Figma',
       },
     ]}
-  />
+  /> -->
 
 
   <!-- CallToAction Widget *********** -->
