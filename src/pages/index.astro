@@ -41,7 +41,6 @@ const metadata = {
       showToggleTheme
     />
   </Fragment>
-
   <!-- Hero2 Widget ******************* -->
 
   <Hero
@@ -128,8 +127,8 @@ const metadata = {
   />
 
   <!-- Features3 Widget ************** -->
-<!-- <TechnicalSkills/> -->
-  <Features3
+<TechnicalSkills/>
+  <!-- <Features3
     id="skills"
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
@@ -153,7 +152,7 @@ const metadata = {
         description: 'Docker, Git, Figma',
       },
     ]}
-  />
+  /> -->
 
 
   <!-- CallToAction Widget *********** -->
@@ -222,3 +221,13 @@ const metadata = {
   />
 </Fragment>
 </Layout>
+<script>
+  import { gsap } from "gsap";
+  console.log("using GSAP: ", gsap.version);
+  gsap.from('#hero', {
+  opacity: 0,
+  y: 100,
+  duration: 2,
+  ease: 'power3.out'
+});
+</script>

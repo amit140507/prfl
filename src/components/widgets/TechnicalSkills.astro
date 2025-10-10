@@ -11,13 +11,13 @@ import SkillTag from './SkillTag.astro';
       <div class="mb-8 md:mx-auto md:mb-12 text-center max-w-3xl">
         <h2 class="text-4xl font-bold text-center">Skills</h2>
         <p class="mt-4 text-muted text-xl">
-          Discover the proficiencies that allow me to bring imagination to life through design.
+          Explore the skills that empower me to transform ideas into functional and visually engaging web experiences.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Backend & Databases -->
-        <div class="bg-white rounded-xl shadow p-6 dark:bg-gray-800">
+        <div class="bg-white rounded-xl shadow-xl p-6 dark:bg-gray-800 ">
           <h3 class="text-xl font-semibold text-blue-600 mb-4 dark:text-white">Backend & Databases</h3>
           <div class="flex flex-wrap gap-3">
             <span class="skill-tag">Python</span>
@@ -29,7 +29,7 @@ import SkillTag from './SkillTag.astro';
         </div>
 
         <!-- Frontend -->
-        <div class="bg-white rounded-xl shadow p-6 dark:bg-slate-800">
+        <div class="bg-white rounded-xl shadow-xl p-6 dark:bg-slate-800">
           <h3 class="text-xl font-semibold text-blue-600 mb-4 dark:text-white">Frontend</h3>
           <div class="flex flex-wrap gap-3">
             <span class="skill-tag">JavaScript</span>
@@ -39,7 +39,7 @@ import SkillTag from './SkillTag.astro';
         </div>
 
         <!-- DevOps & Tools -->
-        <div class="bg-white rounded-xl shadow p-6 dark:bg-slate-800">
+        <div class="bg-white rounded-xl shadow-xl p-6 dark:bg-slate-800">
           <h3 class="text-xl font-semibold text-blue-600 mb-4 dark:text-white">DevOps & Tools</h3>
           <div class="flex flex-wrap gap-3">
             <span class="skill-tag">Docker</span>
@@ -48,7 +48,7 @@ import SkillTag from './SkillTag.astro';
         </div>
 
         <!-- CMS & PHP Development -->
-        <div class="bg-white rounded-xl shadow p-6 dark:bg-slate-800">
+        <div class="bg-white rounded-xl shadow-xl p-6 dark:bg-slate-800">
           <h3 class="text-xl font-semibold text-blue-600 mb-4 dark:text-white">CMS & PHP Development</h3>
           <div class="flex flex-wrap gap-3">
             <span class="skill-tag">WordPress</span>
@@ -65,6 +65,6 @@ import SkillTag from './SkillTag.astro';
 
 <style>
   .skill-tag {
-    @apply bg-gray-100 text-black text-sm px-4 py-2 rounded-full;
+    @apply bg-gray-100 text-black text-sm px-4 py-2 rounded-full cursor-default dark:bg-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 transition;
   }
 </style>
